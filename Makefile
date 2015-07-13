@@ -3,6 +3,7 @@ export PYTHONPATH
 EXES=multimode.py multimode_helper.py
 LIBS=multimode_helper.py
 THESTUFF=$(LIBS) multimode.grc Makefile README
+
 multimode.py: multimode.grc
 	@echo Using $(PYTHONPATH) for compile...
 	grcc -d . multimode.grc
